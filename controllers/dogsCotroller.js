@@ -5,8 +5,8 @@ let dogs = DOGS;
 
 exports.getDogs = (req, res) => {
   if (dogs.length <= 0) {
-    res.json({ purchases, message: 'No dogs available' });
+    res.json({ dogs, message: 'No dogs available' });
     return;
   }
-  res.json(purchases);
+  res.json(dogs);
 };
